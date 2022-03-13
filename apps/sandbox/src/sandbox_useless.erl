@@ -1,7 +1,7 @@
 -module(sandbox_useless).
 
 -export([add/2, hello/0, great_and_add_two/1, hello_via_imported/0, greet/2, old_enough/1,
-         right_age/1, oh_god/1]).
+         right_age/1, oh_god/1, insert/2]).
 
 -import(io, [format/1]).
 
@@ -11,7 +11,7 @@ add(X, Y) ->
   X + Y.
 
 hello() ->
-  io:format("Hello, world!~n").
+  io:format("Hello, plob!~n").
 
 hello_via_imported() ->
   format("Hello, world!~n").
